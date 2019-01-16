@@ -14,3 +14,19 @@ body {
 #receipt {
   display:none;
 }
+
+#burgers {
+  width:200px;
+}
+
+#name {
+  width:300px;
+}
+
+#address {
+  width:300px;
+}
+
+#make-order {
+  padding-left: 40px;
+}
