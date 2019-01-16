@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>McDonalds</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1> McDonalds</h1>
+  </div>
+
+  <div id="make-order">
+
+    <h2> Fill out the form below to complete your order!</h2>
+    <form id="formOne">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input id="name" class="form-control" type="text"></input>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input id="address" class="form-control" type="text"></input>
+      </div>
+
+      <div class="form-group">
+        <label for="burgers">Burgers</label>
+        <select class="form-control" id="burgers">
+          <option>Cheeseburger</option>
+          <option>Double Cheeseburger</option>
+          <option>Big Mac</option>
+          <option>Filet O Fish</option>
+        </select>
+        <button type="button" class="btn btn-info" id="add-burger">Add</button>
+      </div>
+
+      <div class="form-group">
+        <label for="drinks">Drinks</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="drinks" value="Coca Cola" checked>
+              Coca Cola
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="drinks" value="Sweet Tea">
+              Sweet Tea
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="drinks" value="Coffee">
+              Coffee
+            </label>
+          </div>
+        <button type="button" class="btn btn-info" id="add-drink">Add</button>
+      </div>
+
+      <div class="form-group">
+        <label for="card">Card Number</label>
+        <input id="card" class="form-control" type="text"></input>
+      </div>
+
+      <button class="btn btn-info" type="submit" id="myBtn">Submit Order</button>
+    </form>
+
+    <h3>Orders :</h3>
+    <ul id="orders">
+
+    </ul>
+  </div>
+
+  <div id="receipt">
+    <h2>Thank you <span class="name"></span> for your order!</h2>
+    <p>We will ship these food to <br/>
+      <span class="address"></span>
+    </p>
+
+    <p>Here are your orders:</p>
+    <ul id="order-receipt">
+    </ul>
+
+    <button type="button" class="btn btn-info" id="returnmenu">Return to homepage</button>
+  </div>
+
+</div>
+
+</body>
+</html>
